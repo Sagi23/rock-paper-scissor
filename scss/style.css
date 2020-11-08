@@ -1,0 +1,202 @@
+:root {
+  background-color: #a5b1ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body,
+main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-grid {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+}
+
+.main-grid .user {
+  border-right: 1px solid black;
+}
+
+.main-grid .user span {
+  font-size: 1.3rem;
+}
+
+.main-grid .user span p {
+  margin: 0;
+}
+
+.main-grid .user #o {
+  margin-top: 3em;
+}
+
+.main-grid .user img:hover {
+  cursor: pointer;
+}
+
+.main-grid img {
+  display: block;
+  width: 10em;
+  height: 10em;
+  margin: 5em auto;
+}
+
+.main-grid .right {
+  border-left: 1px solid black;
+}
+
+.main-grid .middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.main-grid .middle .battel {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.main-grid .middle .battel form {
+  margin-top: 1em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.main-grid .middle .battel form select {
+  font-size: 1.4rem;
+}
+
+.main-grid .middle .battel form button {
+  font-size: 1.4rem;
+}
+
+.main-grid .middle .battel .change {
+  text-align: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.main-grid .middle .vs {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 5rem;
+}
+
+.main-grid .banner {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  opacity: 2.5%;
+  z-index: -1;
+  top: -3em;
+  left: -1em;
+  font-size: 5rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  height: 0;
+  width: 0;
+}
+
+.main-grid .banner h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.726);
+  width: 100vw;
+  height: 100vh;
+}
+
+.show .play-again {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a5ffcc), to(#43b54e));
+  background-image: linear-gradient(#a5ffcc, #43b54e);
+  width: 20%;
+  height: 20%;
+  margin: 17em auto;
+  padding: 4em;
+}
+
+.show .play-again p {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.show .play-again form {
+  font-size: 2rem;
+  margin-top: -1em;
+}
+
+.show .play-again form select,
+.show .play-again form button {
+  font-size: 1.2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+@media (min-width: 2000px) {
+  :root {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
