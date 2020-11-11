@@ -120,7 +120,7 @@ main {
   opacity: 2.5%;
   z-index: -1;
   top: -3em;
-  left: -1em;
+  left: 0em;
   font-size: 5rem;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
